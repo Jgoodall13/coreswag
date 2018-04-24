@@ -1,0 +1,294 @@
+<style>
+    /* This gives us full width */
+    div#pageBody {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    }
+    /* This is for the hero CTA's */
+    h1.category_cta_header{
+        position: absolute;
+        color: #fff;
+        top: 18%;
+        left: 35%;
+        font-size: 80px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-index:999;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+    }
+    h4.category_cta_header {
+        position: absolute;
+        color: white;
+        top: 12%;
+        left: 40%;
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-index:999;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+    }
+    .banner_cta {
+        padding:5px 40px;
+        border:1px solid white;
+        border-radius:10px;
+        font-size:14px;
+        color:#fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: large;
+        font-weight: bolder;
+    }
+    a.banner_cta:hover {
+        background-color: orange;
+        color: white;
+    }
+    .bronze-cta{
+        position: absolute;
+        top: 51%;
+        left: 48%;
+        z-index: 9999
+    }
+    .silver-cta{
+        position: absolute;
+        top: 51%;
+        left: 51%;
+        z-index: 9999
+    }
+    .gold-cta{
+        position: absolute;
+        top: 48%;
+        left: 52%;
+        z-index: 9999;
+    }
+    .platinum-cta{
+        position: absolute;
+        top: 55%;
+        left: 55%;
+        z-index: 9999;
+    }
+    h1.category_cta_header.build-it{
+        left: 45%;
+    }
+    h1.category_cta_header.p-products{
+        left: 54%;
+        top: 5%;
+    }
+    h1.category_cta_header.p-products-two {
+        top: 23%;
+        left: 52.5%;
+    }
+    h1.category_cta_header.silver-head{
+        left: 44%;
+    }
+    .custom-cta{
+        position: absolute;
+        top: 48%;
+        left: 46%;
+        z-index: 9999
+    }
+    #featured-coin{
+        padding: 0;
+         margin: 0;
+        width: 100%;
+    }
+    #featured-padding{
+        padding: 0;
+    }
+    .featured-logo{
+        text-align: center;
+        color: #ef4c2d;
+        font-family: 'Oswald', sans-serif;
+        font-size: 33px;
+        margin: 0;
+    }
+    .bar{
+        width: 100%;
+        border: 3px solid #ef4c2d;
+        margin-top: 18px;
+        background: #ef4c2d;
+    }
+    #featured-items{
+        text-align: center;
+    }
+    a.featured-button {
+        font-family: 'Montserrat', sans-serif;
+        border: 1px solid #e77b02;
+        background-color: #e77b02;
+        color: white;
+        border-radius: 10px;
+        padding: 3px 10px;
+    }
+    a.featured-button:hover{
+        background-color: white;
+        color: #e77b02;
+        border: 1px solid #e77b02;
+    }
+    .categories_wrapper{
+        padding-bottom: 30px;
+    }
+    .banner_slider_theme .owl-dots .owl-dot span{
+        opacity: .5;
+    }
+    .banner_slider_theme .owl-dots .owl-dot.active span, .banner_slider_theme .owl-dots .owl-dot:hover span{
+        background: #ef4c2d;
+    }
+    @media(max-width: 1150px){
+        h4.category_cta_header{
+            font-size: 25px
+        }
+        h1.category_cta_header{
+            font-size: 60px;
+            left: 40%;
+        }
+    }
+    @media(max-width: 992px){
+        h1.category_cta_header{
+            font-size: 50px;
+        }
+    }
+    @media(max-width: 767px){
+        h1.category_cta_header{
+            font-size: 30px;
+        }
+        h4.category_cta_header{
+            font-size: 15px;
+        }
+        .border.col-md-3 {
+            padding-bottom: 30px;
+        }
+        .bar{
+            display: none;
+        }
+        .banner_cta{
+            font-size: 14px;
+        }
+        h4.category_cta_header, h1.category_cta_header{
+            display: none;
+        }
+        .banner_cta {
+             padding: 5px 10px;
+        }
+    }
+    @media(max-width: 500px){
+        img.img-responsive{
+            height: 275px;
+        }
+        img.img-bronze{
+            content:url('/assets/img/ksEnergy/bronzeheroMobile.jpg')
+        }
+        img.img-silver{
+            content:url('/assets/img/ksEnergy/silverheroMobile.jpg')
+        }
+        img.img-gold{
+            content:url('/assets/img/ksEnergy/goldheroMobile.jpg')
+        }
+        img.img-platinum{
+            content:url('/assets/img/ksEnergy/platinumheroMobile.jpg')
+        }
+        .banner_cta{
+            top: 27%;
+        }
+        .platinum-cta{
+            left: 47%;
+        }
+    }
+</style>
+
+<div id="banner_slider_wrapper">
+    <div class="row gutter-0">
+        <div class="col-sm-12">
+            <div id="banner_slider" class="banner_slider_theme owl-carousel">
+                <div class="slide_item slide-one" data-hash="slide1">
+                    <h4 class="category_cta_header">WELCOME TO THE KS ENERGY BRAND STORE</h4>
+                    <h1 class="category_cta_header">POWERED TO DELIVER</h1>
+                    <a class="banner_cta bronze-cta" href="/category/20081/Bronze.html">Shop Bronze Items</a>
+                    <img src="/assets/img/ksEnergy/bhero.jpg" class="img-responsive img-bronze">
+                </div>
+                <div class="slide_item slide-two" data-hash="slide2">
+                    <h1 class="category_cta_header silver-head">TRUE QUALITY</h1>
+                    <a class="banner_cta silver-cta" href="/category/20082/Silver.html">Shop Silver Items</a>
+                    <img src="/assets/img/ksEnergy/shero.jpg" class="img-responsive img-silver">
+                </div>
+                <div class="slide_item slide-three" data-hash="slide3">
+                    <h1 class="category_cta_header build-it">BUILT TO LAST</h1>
+                    <a class="banner_cta gold-cta" href="/category/20083/Gold.html">Shop Gold Items</a>
+                    <img src="/assets/img/ksEnergy/ghero.jpg" class="img-responsive img-gold">
+                </div>
+                <div class="slide_item slide-three" data-hash="slide4">
+                    <h1 class="category_cta_header p-products">PREMIUM</h1>
+                    <h1 class="category_cta_header p-products-two">PRODUCTS</h1>
+                    <a class="banner_cta platinum-cta" href="/category/20084/Platinum.html">Shop Platinum Items</a>
+                    <img src="/assets/img/ksEnergy/phero.jpg" class="img-responsive img-platinum">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="featured-coin">
+    <div class="row">
+        <div class="col-sm-5">
+            <div class="bar"></div>
+        </div>
+        <div class="col-sm-2" id="featured-padding">
+            <h3 class="featured-logo">FEATURED ITEMS</h3>
+        </div>
+        <div class="col-sm-5">
+            <div class="bar"></div>
+        </div>
+    </div>
+
+    <div class="border row" id="featured-items">
+        <div class="border col-md-3">
+            <img src="/assets/img/ksEnergy/duffel.jpg" alt="bag">
+            <h4 class="item-description">Carharrt<sup>&reg;</sup> Signature<br />20" Duffel</h4>
+            <a href="/product/KSE015/CARHARTT-SIGNATURE-20-DUFFEL.html" class="featured-button">View Item</a>
+        </div>   
+        <div class="border col-md-3">
+             <img src="/assets/img/ksEnergy/buckKnife.jpg" alt="knife">
+             <h4 class="item-description">Buck<sup>&reg;</sup> "Squire"<br />Lockback Knife</h4>
+             <a href="/product/KSE011/BUCK-SQUIRE-LOCKBACK-KNIFE.html" class="featured-button">View Item</a>
+        </div>
+        <div class="border col-md-3">
+            <img src="/assets/img/ksEnergy/highChair.jpg" alt="chair">
+            <h4 class="item-description">High Sierra<sup>&reg;</sup><br />Deluxe Camping Chair</h4>
+            <a href="/product/KSE012/HIGH-SIERRA-DELUXE-CAMPING-CHAIR.html" class="featured-button">View Item</a>
+        </div>
+        <div class="border col-md-3">
+           <img src="/assets/img/ksEnergy/thermos.jpg" alt="mug">
+           <h4 class="item-description">Thermos<sup>&reg;</sup> Stainless Steel<br />Travel Tumbler</h4>
+           <a href="/product/KSE010/THERMOS-STAINLESS-STEEL-TRAVEL-TUMBLER-16OZ.html" class="featured-button">View Item</a>
+        </div>
+    </div>
+</div>
+
+<script>  
+    $(function() {
+             $('#banner_slider').owlCarousel({
+                 navText: ['<span class="fa fa-angle-left"></span>','<span class="fa fa-angle-right"></span>'],
+                 items: 1,
+                 margin: 0,
+                 nav: true,
+                 dots: true,
+                 loop: true,
+                 rewind: true,
+                 autoHeight: false,
+                 autoplay: false,
+                 autoplaySpeed: 400,
+                 navSpeed: 400,
+                 dotsSpeed: 400,
+                 dragEndSpeed: 400,
+                 autoplayTimeout: 5000,
+                 responsive: {
+                     0: {
+                         nav: false
+                     },
+                     768: {
+                         nav: true
+                     }
+                 }
+             });
+ });
+ </script>
