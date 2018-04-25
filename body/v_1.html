@@ -1,23 +1,94 @@
 <style>
+    body{
+        text-decoration: none;
+    }
     div#pageBody {
         padding: 0;
         margin: 0;
         width: 100%;
     }
-    #main-hero-slider{
+    #main-hero-slider {
         padding: 0;
         margin-top: -1px;
     }
+    .col-md-4 {
+        text-align: center;
+    }
+    .thumb-img{
+        max-width: 250px;
+    }
+    .view-details {
+        background: #393939;
+        padding: 5px;
+        width: 160px;
+        margin: auto;
+        font-family: Gotham;
+        color: white;
+    }
+    .gallery:hover {
+        text-decoration: none;
+    }
+    .item-title{
+        color: #7c7c7c;
+        font-size: 22px;
+        font-family: "roboto"
+    }
+    .item-sku{
+        color: black;
+        font-family: "roboto"
+    }
+
 </style>
 
 <div id="main-hero-slider" class="container-fluid">
-	<div id="slider" class="owl-carousel">
-		<div class="slide_item"><img src="/assets/Templates/38/images/slider/image_1.jpg" class="img-responsive">
-		</div>
-		<div class="slide_item"><img src="/assets/img/ksEnergy/bhero.jpg" class="img-responsive center-block">
-		</div>
-		<div class="slide_item"><img src="/assets/Templates/38/images/slider/image_3.jpg" class="img-responsive center-block">
-		</div>
-	
-	</div>
+    <div id="slider" class="owl-carousel">
+        <div class="slide_item">
+            <img src="/assets/Templates/38/images/slider/image_1.jpg" class="img-responsive">
+        </div>
+        <div class="slide_item">
+            <img src="/assets/img/ksEnergy/bhero.jpg" class="img-responsive center-block">
+        </div>
+        <div class="slide_item">
+            <img src="/assets/Templates/38/images/slider/image_3.jpg" class="img-responsive center-block">
+        </div>
+
+    </div>
 </div>
+
+<!--Color Box -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <a class='gallery' href='/assets/img/coreswag/core061.png'>
+                <img src="/assets/img/coreswag/item061.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">Ahead Tea Stained</h4>
+                <h4 class="item-sku">ITEM#: CORE061</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a class='gallery' href='/assets/img/coreswag/Core062.png'>
+                <img src="/assets/img/coreswag/item062.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">Next Level Racerback</h4>
+                <h4 class="item-sku">ITEM#: CORE062</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a class='gallery' href='/assets/img/coreswag/core063.png'>
+                <img src="/assets/img/coreswag/item063.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">District Concert Tank</h4>
+                <h4 class="item-sku">ITEM#: CORE063</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        jQuery('a.gallery').colorbox({
+            rel: 'gal'
+        });
+    })
+</script>
