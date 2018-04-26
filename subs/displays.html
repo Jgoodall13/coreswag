@@ -1,0 +1,107 @@
+<style>
+    body {
+        text-decoration: none;
+    }
+
+    div#pageBody {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    #main-hero-slider {
+        padding: 0;
+        margin-top: -1px;
+    }
+
+    .col-md-4 {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .thumb-img {
+        max-width: 250px;
+    }
+
+    .view-details {
+        background: #393939;
+        padding: 5px;
+        width: 160px;
+        margin: auto;
+        font-family: Gotham;
+        color: white;
+    }
+
+    .gallery:hover {
+        text-decoration: none;
+    }
+
+    .item-title {
+        color: #7c7c7c;
+        font-size: 22px;
+        font-family: "roboto"
+    }
+
+    .item-sku {
+        color: black;
+        font-family: "Roboto"
+    }
+</style>
+
+<!--Color Box -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <a class='gallery' href='/assets/img/coreswag/core056.png'>
+                <img src="/assets/img/coreswag/item056.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">17oz H2GO Force</h4>
+                <h4 class="item-sku">ITEM#: CORE056</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a class='gallery' href='/assets/img/coreswag/core057.png'>
+                <img src="/assets/img/coreswag/item057.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">Hugo Copper Insulated Tumbler</h4>
+                <h4 class="item-sku">ITEM#: CORE057</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a class='gallery' href='/assets/img/coreswag/core058.png'>
+                <img src="/assets/img/coreswag/item058.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">The Rebel</h4>
+                <h4 class="item-sku">ITEM#: CORE058</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <a class='gallery' href='/assets/img/coreswag/core059.png'>
+                <img src="/assets/img/coreswag/item059.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">17oz H2GO Force</h4>
+                <h4 class="item-sku">ITEM#: CORE059</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a class='gallery' href='/assets/img/coreswag/core060.png'>
+                <img src="/assets/img/coreswag/item060.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">Hugo Copper Insulated Tumbler</h4>
+                <h4 class="item-sku">ITEM#: CORE060</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        jQuery('a.gallery').colorbox({
+            rel: 'gal'
+        });
+    })
+</script>
