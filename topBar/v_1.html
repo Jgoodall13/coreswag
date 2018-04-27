@@ -1,29 +1,41 @@
 <style>
     #top-bar {
-       background: linear-gradient(to bottom right, #bae6eb, #c0e1a5);
+        background: linear-gradient(to bottom right, #bae6eb, #c0e1a5);
         border-bottom: 2px solid black;
         height: 40px;
     }
-    .top-bar-nav{
+
+    .top-bar-nav {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    a.top-bar-link{
+
+    a.top-bar-link {
         color: black;
         font-size: 15px;
         padding: 10px 55px;
         text-decoration: none;
     }
-    a.top-bar-link:hover{
-        color: gray;
+
+    a.top-bar-link:hover {
+        font-weight: 600;
     }
+
     /*Global Populated items via Web Jag*/
+
     h1.category_head_name {
         display: none;
     }
-    .breadcrumb{
+
+    .breadcrumb {
         display: none;
+    }
+
+    @media (max-width:767px) {
+        #top-bar {
+            display: none;
+        }
     }
 </style>
 
@@ -32,11 +44,26 @@
     <div class="container">
         <div class="row">
             <div class="top-bar-nav col-xs-12">
-                <a href="/" class="top-bar-link">Apparel</a>
-                <a href="/category/20136/Displays.html" class="top-bar-link">Displays</a>
-                <a href="/category/20137/Move-in-gifts.html" class="top-bar-link">Move In Gifts</a>
-                <a href="/category/20138/Promos.html" class="top-bar-link">Promos</a>
+                <a href="/" class="top-bar-link" id="nav-one">Apparel</a>
+                <a href="/category/20136/Displays.html" class="top-bar-link" id="nav-two">Displays</a>
+                <a href="/category/20137/Move-in-gifts.html" class="top-bar-link" id="nav-three">Move In Gifts</a>
+                <a href="/category/20138/Promos.html" class="top-bar-link" id="nav-four">Promos</a>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function(){
+        var path = window.location.pathname;
+        if(path == '/'){
+            $('a#nav-one').css('font-weight', '600');
+        } else if (path == '/category/20136/Displays.html'){
+            $('a#nav-two').css('font-weight', '600');
+        } else if (path == '/category/20137/Move-in-gifts.html'){
+            $('a#nav-three').css('font-weight', '600');
+        } else if (path == '/category/20138/Promos.html'){
+            $('a#nav-four').css('font-weight', '600');
+        }
+    })
+</script>

@@ -36,20 +36,29 @@
     div#pageSubFooterWrapper {
         display: none;
     }
+    @media (max-width:768px){
+        .footer-links{
+            display: flex;
+            justify-content: space-around;
+        }
+        .love-div{
+            text-align: center;
+        }
+    }
 </style>
 
 <div id="core-footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
-                <h4 class="white">Excutive management</h4>
+            <div class="col-md-3 col-sm-6">
+                <h4 class="white">Executive Management</h4>
                 <p class="white">3508 Far West Blvd</p>
                 <p class="white">Suite 355</p>
                 <p class="white">Austin, TX 78731</p>
                 <p class="white">512-284-8601</p>
                 <a href="mailto:info@corespaces.com" class="white">info@corespaces.com</a>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <h4 class="white">Headquarters</h4>
                 <p class="white">1634 N Milwaukee Ave</p>
                 <p class="white">5th Floor</p>

@@ -3,42 +3,162 @@
         font-family: Gotham;
         src: url('/assets/fonts/Gotham-Bold.otf');
     }
-    #header-top{
+
+    #header-top {
         background-color: black;
     }
-    .active-email{
+
+    #header-top-mobile {
+        display: none;
+        background-color: black;
+    }
+
+    .active-email {
         display: flex;
         justify-content: flex-end;
         margin-top: 20px;
         font-family: "Roboto";
     }
+
     .fa-envelope:before {
         color: white;
         font-size: 3em;
         padding-right: 15px;
     }
-    .white{
+
+    .white {
         color: white;
     }
+
     #main-logo {
         max-height: 60px;
         max-width: 178px;
         margin: 10px;
+    }
+
+    img#main-logo-mobile {
+        height: 34px;
+        margin-left: 5px;
+    }
+
+    #burger-menu{
+        display: none;
+        width: 37%;
+        position: absolute;
+        top: 59px;
+        left: 14px;
+        z-index: 9999;
+        background: #b0d675;
+    }
+    #burger-menu a {
+        color: black;
+        font-family: "Roboto";
+    }
+    .col-xs-12 {
+        border-bottom: 1px solid white;
+    }
+    img#burger {
+        height: 26px;
+        margin-top: -7px;
+    }
+
+    @media (max-width: 767px) {
+        #header-top {
+            display: none;
+        }
+        #header-top-mobile {
+            display: block;
+            height: 60px;
+        }
+        .fa-envelope:before {
+            font-size: 1em;
+            padding-right: 3px;
+            color: black;
+        }
+        .col-xs-6 {
+            margin-top: 15px;
+            margin-bottom: 3px;
+        }
+        .head-title-mobile {
+            font-size: 10px;
+            color: black;
+            font-family: "Roboto"
+        }
+        #mail-mobile-div {
+            margin-top: 20px;
+            text-align: right;
+        }
+        #mail-mobile-button {
+            padding: 3px 5px;
+            background: #b0d675;
+            border-radius: 5px;
+        }
     }
 </style>
 
 <div id="header-top">
     <div class="container">
         <div class="row">
-            <div class="col-xs-6">
-                <a href="/"><img src="/assets/img/coreswag/corespaces_logo.svg" alt="core spaces" id="main-logo"></a>
+            <div class="col-sm-6">
+                <a href="/">
+                    <img src="/assets/img/coreswag/corespaces_logo.svg" alt="core spaces" id="main-logo">
+                </a>
             </div>
-            <div class="col-xs-6 active-email">
+            <div class="col-sm-6 active-email">
                 <i class="fa fa-envelope"></i>
                 <div>
-                    <p class="white">For Inquiries and Virtuals <br />With Your Campus Logo Email<a href="mailto:coreswag@overturepromo.com" class="white"><br />CoreSwag@overturepromo.com</a></p>
+                    <p class="white">For Inquiries and Virtuals
+                        <br />With Your Campus Logo Email
+                        <a href="mailto:coreswag@overturepromo.com" class="white">
+                            <br />CoreSwag@overturepromo.com</a>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<div id="header-top-mobile">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-6">
+                <img src="/assets/img/coreswag/Menu.png" alt="" id="burger">
+                <a href="/">
+                    <img src="/assets/img/coreswag/corespaces_logo.svg" alt="core spaces" id="main-logo-mobile">
+                </a>
+            </div>
+            <div class="col-xs-6" id="mail-mobile-div">
+                <a href="mailto:coreswag@overturepromo.com" id="mail-mobile-button">
+                    <i class="fa fa-envelope"></i>
+                    <span class="head-title-mobile">PLACE YOUR ORDER</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id='burger-menu'>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="/">Apparel</a>
+            </div>
+            <div class="col-xs-12">
+                <a href="/category/20136/Displays.html">Displays</a>
+            </div>
+            <div class="col-xs-12">
+                <a href="/category/20137/Move-in-gifts.html">Move In Gifts</a>
+            </div>
+            <div class="col-xs-12">
+                <a href="/category/20138/Promos.html">Promos</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#burger').click(function () {
+            $('#burger-menu').slideToggle('slow')
+        })
+    })
+</script>
