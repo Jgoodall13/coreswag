@@ -62,6 +62,23 @@
         margin-top: -7px;
     }
 
+    /*This is going to create the fixed header...*/
+    #contentWrapper{
+        margin-top: 121px;
+    }
+    div#pageHeaderWrapper {
+        width: 100%;
+        position: fixed;
+        z-index: 9999;
+    }
+    div#pageTopbarWrapper {
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        margin-top: 80px;
+    }
+
+
     @media (max-width: 767px) {
         #header-top {
             display: none;
@@ -92,6 +109,9 @@
             padding: 3px 5px;
             background: #b0d675;
             border-radius: 5px;
+        }
+        #contentWrapper {
+            margin-top: 64px;
         }
     }
 </style>
