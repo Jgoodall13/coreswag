@@ -2,32 +2,40 @@
     #core-footer {
         background-color: black;
     }
+
     .white {
         color: white;
     }
+
     .footer-links {
         text-align: right;
         margin-top: 15px;
     }
+
     a.footer-link {
         color: gray;
         text-decoration: none;
         line-height: 3;
     }
+
     a.footer-link:hover {
         color: white;
     }
+
     .love-div {
         text-align: right;
         padding-bottom: 20px;
     }
+
     p.white {
         line-height: 1;
     }
+
     h4.white {
         line-height: 3;
     }
-    #logo-love{
+
+    #logo-love {
         max-width: 275px;
     }
 
@@ -36,12 +44,35 @@
     div#pageSubFooterWrapper {
         display: none;
     }
-    @media (max-width:768px){
-        .footer-links{
+
+    /*scroll button*/
+
+    #scrollBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 9999;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+    #scrollBtn:hover {
+        background-color: #555;
+    }
+
+    @media (max-width:768px) {
+        .footer-links {
             display: flex;
             justify-content: space-around;
         }
-        .love-div{
+        .love-div {
             text-align: center;
         }
     }
@@ -82,3 +113,26 @@
         </div>
     </div>
 </div>
+<button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+
+
+<script>
+    $(document).ready(function () {
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollBtn").style.display = "none";
+            }
+        }
+    })
+    function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+</script>

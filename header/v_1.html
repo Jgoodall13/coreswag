@@ -4,6 +4,10 @@
         src: url('/assets/fonts/Gotham-Bold.otf');
     }
 
+    *:focus{
+         outline:none !important;
+    }
+
     #header-top {
         background-color: black;
     }
@@ -30,6 +34,10 @@
         color: white;
     }
 
+    p.white{
+        font-weight: bold;
+    }
+
     #main-logo {
         max-height: 60px;
         max-width: 178px;
@@ -53,9 +61,6 @@
     #burger-menu a {
         color: black;
         font-family: "Roboto";
-    }
-    .col-xs-12 {
-        border-bottom: 1px solid white;
     }
     img#burger {
         height: 26px;
@@ -99,7 +104,7 @@
         .head-title-mobile {
             font-size: 10px;
             color: black;
-            font-family: "Roboto"
+            font-family: Gotham;
         }
         #mail-mobile-div {
             margin-top: 20px;
@@ -112,6 +117,10 @@
         }
         #contentWrapper {
             margin-top: 64px;
+        }
+        .col-xs-12 {
+            border-bottom: 1px solid white;
+            padding: 10px;
         }
     }
 </style>
@@ -127,10 +136,9 @@
             <div class="col-sm-6 active-email">
                 <i class="fa fa-envelope"></i>
                 <div>
-                    <p class="white">For Inquiries and Virtuals
-                        <br />With Your Campus Logo Email
-                        <a href="mailto:coreswag@overturepromo.com" class="white">
-                            <br />CoreSwag@overturepromo.com</a>
+                    <p class="white">For Inquiries and Virtuals With Your Campus Logo<br /> 
+                        Email<a href="mailto:coreswag@overturepromo.com" class="white">CoreSwag@overturepromo.com</a><br />
+                        to place your order!
                     </p>
                 </div>
             </div>
