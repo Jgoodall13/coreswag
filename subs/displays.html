@@ -61,18 +61,45 @@
         font-size: 16px;
         font-weight: 300;
     }
+    .calling-actions {
+        position: absolute;
+        top: 8%;
+        left: 50%;
+        z-index: 999;
+    }
+    .cta-title {
+        font-family: "Roboto";
+        color: black;
+        font-weight: bold;
+        margin-bottom: 25px;
+        width: 75%;
+        font-size: 35px;
+    }
+    @media (max-width: 957px) {
+        .cta-title {
+            font-size: 28px;
+        }
+        .calling-actions {
+            top: 2%;
+        }
+    }
     @media (max-width: 767px){
         .page-hero{
             background-image: url('/assets/img/coreswag/displayhero_mobile.jpg');
             height: 275px;
             background-size: cover;
         }
+        .calling-actions{
+            display: none;
+        }
     }
 </style>
 
 <!--Color Box -->
 <div class="page-hero">
-
+    <div class="calling-actions">
+        <h1 class="cta-title">Stand out at your next event with amazing full color displays custom to your Core Spaces property.</h1>
+    </div>
 </div>
 <div class="container">
     <div class="row">

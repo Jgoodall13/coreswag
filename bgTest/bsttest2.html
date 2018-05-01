@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+        <style>
+                body {
+                    text-decoration: none;
+                }
+            
+                div#pageBody {
+                    padding: 0;
+                    margin: 0;
+                    width: 100%;
+                }
+            
+                #main-hero-slider {
+                    padding: 0;
+                    margin-top: -2.1px;
+                }
+            
+                .col-md-4 {
+                    text-align: center;
+                    margin-bottom: 60px;
+                }
+            
+                .thumb-img {
+                    max-width: 250px;
+                }
+            
+               .view-details {
+                    background: #393939;
+                    padding: 8px;
+                    width: 130px;
+                    margin: auto;
+                    font-family: Gotham;
+                    color: white;
+                    font-size: 15px;
+                }
+            
+                .gallery:hover {
+                    text-decoration: none;
+                }
+            
+                .item-title {
+                    color: #7c7c7c;
+                    font-size: 16px;
+                    font-family: "Roboto";
+                    font-weight: bold;
+                }
+            
+                .item-sku {
+                    color: black;
+                    font-family: "Roboto";
+                    font-weight: 300;
+                    font-size: 16px;
+                }
+            
+                .cta-title {
+                    font-family: "Roboto";
+                    color: black;
+                    font-weight: bold;
+                    margin-bottom: 25px;
+                    width: 75%;
+                    font-size: 35px;
+                }
+            
+                .cta-button {
+                    font-family: Gotham;
+                    color: white;
+                    border: 1px solid black;
+                    padding: 10px;
+                    background: black;
+                }
+            
+                .cta-button:hover {
+                    background: transparent;
+                    border: 1px solid black;
+                    color: black;
+                    text-decoration: none;
+                }
+            
+                .calling-actions {
+                    position: absolute;
+                    top: 30%;
+                    left: 50%;
+                    z-index: 999;
+                }
+            
+                @media (max-width: 957px) {
+                    .cta-title {
+                        font-size: 28px;
+                    }
+                }
+            
+                @media (max-width: 767px) {
+                    #hero-one {
+                        content: url('/assets/img/coreswag/displayhero_mobile.jpg')
+                    }
+                    #hero-two {
+                        content: url('/assets/img/coreswag/giftshero_mobile.jpg')
+                    }
+                    #hero-three {
+                        content: url('/assets/img/coreswag/promoshero_mobile.jpg')
+                    }
+                    .calling-actions {
+                        transform: translateX(-50%);
+                        top: 75%;
+                    }
+                    .cta-title {
+                        display: none;
+                    }
+                }
+            </style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core061.png'>
+                <img src="/assets/img/coreswag/item061.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">Ahead Tea Stained</h4>
+                <h4 class="item-sku">ITEM#: CORE061</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/Core062.png'>
+                <img src="/assets/img/coreswag/item062.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">Next Level Racerback</h4>
+                <h4 class="item-sku">ITEM#: CORE062</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core063.png'>
+                <img src="/assets/img/coreswag/item063.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">District Concert Tank</h4>
+                <h4 class="item-sku">ITEM#: CORE063</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core064.png'>
+                <img src="/assets/img/coreswag/item064.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">Ahead Tea Stained</h4>
+                <h4 class="item-sku">ITEM#: CORE064</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core065.png'>
+                <img src="/assets/img/coreswag/item065.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">Next Level Racerback</h4>
+                <h4 class="item-sku">ITEM#: CORE065</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core066.png'>
+                <img src="/assets/img/coreswag/item066.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">District Concert Tank</h4>
+                <h4 class="item-sku">ITEM#: CORE066</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core067.png'>
+                <img src="/assets/img/coreswag/item067.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">Ahead Tea Stained</h4>
+                <h4 class="item-sku">ITEM#: CORE067</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core068.png'>
+                <img src="/assets/img/coreswag/item068.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">Next Level Racerback</h4>
+                <h4 class="item-sku">ITEM#: CORE068</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core069.png'>
+                <img src="/assets/img/coreswag/item069.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">District Concert Tank</h4>
+                <h4 class="item-sku">ITEM#: CORE069</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core070.png'>
+                <img src="/assets/img/coreswag/item070.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">CornerStone
+                    <sup>&reg;</sup> Select Snag-Proof Pocket Polo</h4>
+                <h4 class="item-sku">ITEM#: CORE070</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core071.png'>
+                <img src="/assets/img/coreswag/item071.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">CornerStone
+                    <sup>&reg;</sup> Select Snag-Proof Polo</h4>
+                <h4 class="item-sku">ITEM#: CORE071</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core072.png'>
+                <img src="/assets/img/coreswag/item072.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">CornerStone
+                    <sup>&reg;</sup> Select Snag-Proof Two Way Colorblock Pocket Polo</h4>
+                <h4 class="item-sku">ITEM#: CORE072</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core073.png'>
+                <img src="/assets/img/coreswag/item073.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">CornerStone
+                    <sup>&reg;</sup> Select Lightweight Snag-Proof Polo</h4>
+                <h4 class="item-sku">ITEM#: CORE073</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core074.png'>
+                <img src="/assets/img/coreswag/item074.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">Port Authority
+                    <sup>&reg;</sup> Dry Zone
+                    <sup>&reg;</sup> Ottoman Polo</h4>
+                <h4 class="item-sku">ITEM#: CORE074</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core075.png'>
+                <img src="/assets/img/coreswag/item075.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">Port Authority
+                    <sup>&reg;</sup> Ladies Pinpoint Mesh Zip Polo</h4>
+                <h4 class="item-sku">ITEM#: CORE075</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core076.png'>
+                <img src="/assets/img/coreswag/item076.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">Port Authority<sup>&reg;</sup> Ladies Silk Touch<sup>&trade;</sup> Polo</h4>
+                <h4 class="item-sku">ITEM#: CORE076</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core077.png'>
+                <img src="/assets/img/coreswag/item077.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">HS Emerson Lightweight JKT</h4>
+                <h4 class="item-sku">ITEM#: CORE077</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core078.png'>
+                <img src="/assets/img/coreswag/item078.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">Eddie Bauer<sup>&reg;</sup> Shaded Crosshatch Soft Shell Jacket</h4>
+                <h4 class="item-sku">ITEM#: CORE078</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core079.png'>
+                <img src="/assets/img/coreswag/item079.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">Port Authority<sup>&reg;</sup> Heather Microfleece Full-Zip Jacket</h4>
+                <h4 class="item-sku">ITEM#: CORE079</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core080.png'>
+                <img src="/assets/img/coreswag/item080.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">Clique Men's Summit Full Zip Microfleece Vest</h4>
+                <h4 class="item-sku">ITEM#: CORE080</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core081.png'>
+                <img src="/assets/img/coreswag/item081.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">Gravenhurst Roots73 Jacket</h4>
+                <h4 class="item-sku">ITEM#: CORE081</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a class='gallery' href='/assets/img/coreswag/core082.png'>
+                <img src="/assets/img/coreswag/item082.jpg" alt="" class="thumb-img">
+                <h4 class="item-title">Name Tags</h4>
+                <h4 class="item-sku">ITEM#: CORE082</h4>
+                <h4 class="view-details">VIEW DETAILS</h4>
+            </a>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

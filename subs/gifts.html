@@ -59,18 +59,49 @@
         font-size: 16px;
         font-weight: 300;
     }
-    @media (max-width: 767px){
-        .page-hero{
+
+    .calling-actions {
+        position: absolute;
+        top: 17%;
+        left: 50%;
+        z-index: 999;
+    }
+
+    .cta-title {
+        font-family: "Roboto";
+        color: black;
+        font-weight: bold;
+        margin-bottom: 25px;
+        width: 75%;
+        font-size: 35px;
+    }
+
+    @media (max-width: 992px) {
+        .cta-title {
+            font-size: 28px;
+        }
+        .calling-actions {
+            top: 4%;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .page-hero {
             background-image: url('/assets/img/coreswag/giftshero_mobile.jpg');
             height: 275px;
             background-size: cover;
+        }
+        .calling-actions {
+            display: none;
         }
     }
 </style>
 
 <!--Color Box -->
 <div class="page-hero">
-
+    <div class="calling-actions">
+        <h1 class="cta-title">Thank your residents for choosing your property as their home away from home.</h1>
+    </div>
 </div>
 <div class="container">
     <div class="row">

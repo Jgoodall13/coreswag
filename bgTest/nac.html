@@ -1,3 +1,51 @@
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="jquery-1.12.1.min.js"></script>
+<script src="jquery.zoom.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#ex1').zoom().wrap("<a href='default.aspx?p=viewitem&item=NAP-049&subno=&showpage=1&subcat='></a>").css(
+            'cursor', 'pointer');
+        $('#ex2').zoom().wrap("<a href='default.aspx?p=viewitem&item=NAP-051&subno=&showpage=1&subcat='></a>").css(
+            'cursor', 'pointer');
+        $('#ex5').zoom().wrap("<a href='default.aspx?p=viewcat&showpage=1'></a>").css('cursor', 'pointer');
+        $('#ex6').zoom().wrap("<a href='default.aspx?p=viewcat&showpage=3'></a>").css('cursor', 'pointer');
+
+    });
+</script>
+
+
+
+<style type="text/css">
+    #mainpage {
+        width: 700px;
+        height: auto;
+        text-align: center;
+    }
+
+    #itemtable tbody tr td {
+        text-align: center;
+        font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #4D4D4D;
+        font-size: 24px;
+        font-weight: 900;
+    }
+
+    #mainpage a {
+        text-decoration: none;
+        color: #FD7E00;
+
+    }
+
+    #mainpage a:hover {
+        color: #4F4F4F;
+    }
+</style>
+
+
+
+
 <div id="mainpage">
 
     <table id="itemtable" width="800" border="0">
