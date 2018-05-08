@@ -14,7 +14,7 @@
     a.top-bar-link {
         color: black;
         font-size: 15px;
-        padding: 10px 55px;
+        padding: 10px 39px;
         text-decoration: none;
     }
 
@@ -45,6 +45,7 @@
         <div class="row">
             <div class="top-bar-nav col-xs-12">
                 <a href="/" class="top-bar-link" id="nav-one">Apparel</a>
+                <a href="/category/20146/Uniforms.html" class="top-bar-link" id="nav-five">Uniforms</a>
                 <a href="/category/20136/Displays.html" class="top-bar-link" id="nav-two">Displays</a>
                 <a href="/category/20137/Move-in-gifts.html" class="top-bar-link" id="nav-three">Move In Gifts</a>
                 <a href="/category/20138/Promos.html" class="top-bar-link" id="nav-four">Promos</a>
@@ -58,7 +59,9 @@
         var path = window.location.pathname;
         if(path == '/'){
             $('a#nav-one').css('font-weight', '600');
-        } else if (path == '/category/20136/Displays.html'){
+        }  else if (path == '/category/20146/Uniforms.html'){
+            $('a#nav-five').css('font-weight', '600');
+        }  else if (path == '/category/20136/Displays.html'){
             $('a#nav-two').css('font-weight', '600');
         } else if (path == '/category/20137/Move-in-gifts.html'){
             $('a#nav-three').css('font-weight', '600');
