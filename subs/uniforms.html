@@ -79,9 +79,19 @@
     }
 
     h4.price-details {
-        color: #7bad21 ;
+        color: #7bad21;
         font-family: "Roboto";
         font-weight: bold;
+    }
+
+    .cta-title-mobile {
+        display: none;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+        font-family: "Roboto";
     }
 
     @media (max-width: 992px) {
@@ -102,13 +112,16 @@
         .calling-actions {
             display: none;
         }
+        .cta-title-mobile {
+            display: block;
+        }
     }
 </style>
 
 <!--Color Box -->
 <div class="page-hero">
     <div class="calling-actions">
-        <h1 class="cta-title">Dress your employee's to match your property and look like a unified team ready to handle anything.</h1>
+        <h1 class="cta-title">Dress your employees to match your property and look like a unified team ready to handle anything.</h1>
     </div>
 </div>
 
@@ -196,13 +209,18 @@
         <div class="col-md-4 col-sm-6">
             <a class='gallery' href='/assets/img/coreswag/core086.png'>
                 <img src="/assets/img/coreswag/item086.jpg" alt="" class="thumb-img">
-                <h4 class="item-title">CornerStone<sup>&reg;</sup> Ladies Select Lightweight Snag-Proof Polo</h4>
+                <h4 class="item-title">CornerStone
+                    <sup>&reg;</sup> Ladies Select Lightweight Snag-Proof Polo</h4>
                 <h4 class="item-sku">ITEM#: CORE086</h4>
                 <h4 class="price-details">As low as $22.82</h4>
                 <h4 class="view-details">VIEW DETAILS</h4>
             </a>
         </div>
     </div>
+</div>
+
+<div class="cta-title-mobile">
+    <h4>UNIFORMS</h4>
 </div>
 
 <script>

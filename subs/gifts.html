@@ -83,6 +83,16 @@
         font-weight: bold;
     }
 
+    .cta-title-mobile {
+        display: none;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+        font-family: "Roboto";
+    }
+
     @media (max-width: 992px) {
         .cta-title {
             font-size: 28px;
@@ -100,6 +110,9 @@
         }
         .calling-actions {
             display: none;
+        }
+        .cta-title-mobile {
+            display: block;
         }
     }
 </style>
@@ -167,6 +180,10 @@
             </a>
         </div>
     </div>
+</div>
+
+<div class="cta-title-mobile">
+    <h4>MOVE IN GIFTS</h4>
 </div>
 
 <script>
